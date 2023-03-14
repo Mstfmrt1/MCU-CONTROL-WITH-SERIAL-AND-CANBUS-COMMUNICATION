@@ -1,5 +1,5 @@
 # MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-
-C# MCU CONTROL WITH SERIAL AND CANBUS COMMUNICATION 
+
 Bu proje basit şekilde isteğe göre CanBus ve Seri haberleşme yaparak farklı mikrokontrolcülere komutlar yollar ve mikrokontrolcüler gelen komutlara göre işlemler yapar ve mesaj yollar.
 
 C# ile hazırlanan arayüzünde ilk olarak MCU ile hangi iletişimi kuracağımız seçilmelidir.
