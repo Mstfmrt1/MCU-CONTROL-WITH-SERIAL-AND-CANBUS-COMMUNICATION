@@ -47,3 +47,22 @@ D:\MERT FILE\C#\Serial_Control\Serial_Control\obj\Debug\Serial_Control.csproj.Co
 D:\MERT FILE\C#\Serial_Control\Serial_Control\obj\Debug\Serial_Control.csproj.CopyComplete
 D:\MERT FILE\C#\Serial_Control\Serial_Control\obj\Debug\Serial_Control.exe
 D:\MERT FILE\C#\Serial_Control\Serial_Control\obj\Debug\Serial_Control.pdb
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\Serial_Control.exe.config
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\Serial_Control.exe
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\Serial_Control.pdb
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\PCANBasic.NET.dll
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\PCANDevice.dll
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\PCANBasic.NET.xml
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.csproj.AssemblyReference.cache
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.csproj.SuggestedBindingRedirects.cache
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.Form2.resources
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.Form1.resources
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.Form3.resources
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.Properties.Resources.resources
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.csproj.GenerateResource.cache
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.csproj.CoreCompileInputs.cache
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.csproj.CopyComplete
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.exe
+D:\MCU-CONTROL-WITH-SERIAL-AND-CANBUS-COMMUNICATION-\Serial_Control\obj\Debug\Serial_Control.pdb
