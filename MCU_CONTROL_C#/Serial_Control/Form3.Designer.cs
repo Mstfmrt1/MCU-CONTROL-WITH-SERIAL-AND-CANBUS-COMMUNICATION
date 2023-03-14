@@ -45,17 +45,24 @@
             this.labelINP2 = new System.Windows.Forms.Label();
             this.radioButtonINP1 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxPwmOutA3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.radioBtnOUTA31 = new System.Windows.Forms.RadioButton();
             this.radioBtnOUTA32 = new System.Windows.Forms.RadioButton();
+            this.textBoxPwmOutA2 = new System.Windows.Forms.TextBox();
             this.radioBtnOUTA22 = new System.Windows.Forms.RadioButton();
             this.radioBtnOUTA11 = new System.Windows.Forms.RadioButton();
             this.radioBtnOUTA21 = new System.Windows.Forms.RadioButton();
+            this.textBoxPwmOutA1 = new System.Windows.Forms.TextBox();
             this.radioButtonpwmA3 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.radioButtonpwmA2 = new System.Windows.Forms.RadioButton();
+            this.checkBoxOUTA3 = new System.Windows.Forms.CheckBox();
             this.radioButtonpwmA1 = new System.Windows.Forms.RadioButton();
             this.radioBtnOUTA12 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.checkBoxOUTA2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxOUTA1 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioBtnOUTA2 = new System.Windows.Forms.RadioButton();
             this.radioBtnOUTA1 = new System.Windows.Forms.RadioButton();
@@ -70,6 +77,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.labelAINP22);
             this.panel3.Controls.Add(this.radioButtonINP3);
@@ -86,7 +94,7 @@
             this.panel3.Controls.Add(this.radioButtonINP1);
             this.panel3.Location = new System.Drawing.Point(-5, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(437, 282);
+            this.panel3.Size = new System.Drawing.Size(437, 333);
             this.panel3.TabIndex = 187;
             // 
             // label4
@@ -249,21 +257,40 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.textBoxPwmOutA3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.radioBtnOUTA31);
             this.panel1.Controls.Add(this.radioBtnOUTA32);
+            this.panel1.Controls.Add(this.textBoxPwmOutA2);
             this.panel1.Controls.Add(this.radioBtnOUTA22);
             this.panel1.Controls.Add(this.radioBtnOUTA11);
             this.panel1.Controls.Add(this.radioBtnOUTA21);
+            this.panel1.Controls.Add(this.textBoxPwmOutA1);
             this.panel1.Controls.Add(this.radioButtonpwmA3);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.radioButtonpwmA2);
+            this.panel1.Controls.Add(this.checkBoxOUTA3);
             this.panel1.Controls.Add(this.radioButtonpwmA1);
             this.panel1.Controls.Add(this.radioBtnOUTA12);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.checkBoxOUTA2);
+            this.panel1.Controls.Add(this.checkBoxOUTA1);
             this.panel1.Location = new System.Drawing.Point(596, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 282);
+            this.panel1.Size = new System.Drawing.Size(457, 282);
             this.panel1.TabIndex = 186;
+            // 
+            // textBoxPwmOutA3
+            // 
+            this.textBoxPwmOutA3.AcceptsTab = true;
+            this.textBoxPwmOutA3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxPwmOutA3.Location = new System.Drawing.Point(272, 143);
+            this.textBoxPwmOutA3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPwmOutA3.Name = "textBoxPwmOutA3";
+            this.textBoxPwmOutA3.Size = new System.Drawing.Size(63, 31);
+            this.textBoxPwmOutA3.TabIndex = 174;
+            this.textBoxPwmOutA3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -298,6 +325,17 @@
             this.radioBtnOUTA32.Text = "LOW";
             this.radioBtnOUTA32.UseVisualStyleBackColor = true;
             // 
+            // textBoxPwmOutA2
+            // 
+            this.textBoxPwmOutA2.AcceptsTab = true;
+            this.textBoxPwmOutA2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxPwmOutA2.Location = new System.Drawing.Point(272, 99);
+            this.textBoxPwmOutA2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPwmOutA2.Name = "textBoxPwmOutA2";
+            this.textBoxPwmOutA2.Size = new System.Drawing.Size(63, 31);
+            this.textBoxPwmOutA2.TabIndex = 173;
+            this.textBoxPwmOutA2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // radioBtnOUTA22
             // 
             this.radioBtnOUTA22.AutoSize = true;
@@ -319,6 +357,7 @@
             this.radioBtnOUTA11.TabStop = true;
             this.radioBtnOUTA11.Text = "HIGH";
             this.radioBtnOUTA11.UseVisualStyleBackColor = true;
+            this.radioBtnOUTA11.CheckedChanged += new System.EventHandler(this.radioBtnOUTA11_CheckedChanged);
             // 
             // radioBtnOUTA21
             // 
@@ -331,10 +370,21 @@
             this.radioBtnOUTA21.Text = "HIGH";
             this.radioBtnOUTA21.UseVisualStyleBackColor = true;
             // 
+            // textBoxPwmOutA1
+            // 
+            this.textBoxPwmOutA1.AcceptsTab = true;
+            this.textBoxPwmOutA1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxPwmOutA1.Location = new System.Drawing.Point(272, 55);
+            this.textBoxPwmOutA1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPwmOutA1.Name = "textBoxPwmOutA1";
+            this.textBoxPwmOutA1.Size = new System.Drawing.Size(63, 31);
+            this.textBoxPwmOutA1.TabIndex = 172;
+            this.textBoxPwmOutA1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // radioButtonpwmA3
             // 
             this.radioButtonpwmA3.AutoSize = true;
-            this.radioButtonpwmA3.Location = new System.Drawing.Point(184, 145);
+            this.radioButtonpwmA3.Location = new System.Drawing.Point(192, 148);
             this.radioButtonpwmA3.Name = "radioButtonpwmA3";
             this.radioButtonpwmA3.Size = new System.Drawing.Size(72, 24);
             this.radioButtonpwmA3.TabIndex = 149;
@@ -346,7 +396,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(188, 14);
+            this.label6.Location = new System.Drawing.Point(229, 17);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 25);
@@ -356,7 +406,7 @@
             // radioButtonpwmA2
             // 
             this.radioButtonpwmA2.AutoSize = true;
-            this.radioButtonpwmA2.Location = new System.Drawing.Point(184, 100);
+            this.radioButtonpwmA2.Location = new System.Drawing.Point(192, 103);
             this.radioButtonpwmA2.Name = "radioButtonpwmA2";
             this.radioButtonpwmA2.Size = new System.Drawing.Size(72, 24);
             this.radioButtonpwmA2.TabIndex = 148;
@@ -364,10 +414,19 @@
             this.radioButtonpwmA2.Text = "PWM";
             this.radioButtonpwmA2.UseVisualStyleBackColor = true;
             // 
+            // checkBoxOUTA3
+            // 
+            this.checkBoxOUTA3.AutoSize = true;
+            this.checkBoxOUTA3.Location = new System.Drawing.Point(374, 150);
+            this.checkBoxOUTA3.Name = "checkBoxOUTA3";
+            this.checkBoxOUTA3.Size = new System.Drawing.Size(22, 21);
+            this.checkBoxOUTA3.TabIndex = 171;
+            this.checkBoxOUTA3.UseVisualStyleBackColor = true;
+            // 
             // radioButtonpwmA1
             // 
             this.radioButtonpwmA1.AutoSize = true;
-            this.radioButtonpwmA1.Location = new System.Drawing.Point(184, 55);
+            this.radioButtonpwmA1.Location = new System.Drawing.Point(192, 58);
             this.radioButtonpwmA1.Name = "radioButtonpwmA1";
             this.radioButtonpwmA1.Size = new System.Drawing.Size(72, 24);
             this.radioButtonpwmA1.TabIndex = 147;
@@ -386,15 +445,45 @@
             this.radioBtnOUTA12.Text = "LOW";
             this.radioBtnOUTA12.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(328, 17);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 25);
+            this.label3.TabIndex = 168;
+            this.label3.Text = "OverWrite";
+            // 
+            // checkBoxOUTA2
+            // 
+            this.checkBoxOUTA2.AutoSize = true;
+            this.checkBoxOUTA2.Location = new System.Drawing.Point(374, 105);
+            this.checkBoxOUTA2.Name = "checkBoxOUTA2";
+            this.checkBoxOUTA2.Size = new System.Drawing.Size(22, 21);
+            this.checkBoxOUTA2.TabIndex = 170;
+            this.checkBoxOUTA2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOUTA1
+            // 
+            this.checkBoxOUTA1.AutoSize = true;
+            this.checkBoxOUTA1.Location = new System.Drawing.Point(374, 60);
+            this.checkBoxOUTA1.Name = "checkBoxOUTA1";
+            this.checkBoxOUTA1.Size = new System.Drawing.Size(22, 21);
+            this.checkBoxOUTA1.TabIndex = 169;
+            this.checkBoxOUTA1.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.radioBtnOUTA2);
             this.groupBox1.Controls.Add(this.radioBtnOUTA1);
             this.groupBox1.Controls.Add(this.radioBtnOUTA3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(438, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(152, 282);
+            this.groupBox1.Size = new System.Drawing.Size(152, 333);
             this.groupBox1.TabIndex = 185;
             this.groupBox1.TabStop = false;
             // 
@@ -459,19 +548,22 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(677, 288);
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(596, 288);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 45);
+            this.button1.Size = new System.Drawing.Size(457, 45);
             this.button1.TabIndex = 188;
             this.button1.Text = "SEND";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 332);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1060, 332);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -526,5 +618,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox textBoxPwmOutA3;
+        public System.Windows.Forms.TextBox textBoxPwmOutA2;
+        public System.Windows.Forms.TextBox textBoxPwmOutA1;
+        private System.Windows.Forms.CheckBox checkBoxOUTA3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBoxOUTA2;
+        private System.Windows.Forms.CheckBox checkBoxOUTA1;
     }
 }

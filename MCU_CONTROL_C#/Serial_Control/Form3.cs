@@ -104,7 +104,7 @@ namespace Serial_Control
         public static int callback(object[] args)
         {
             TPCANMsg msg = (TPCANMsg)args[0];
-            string msgID = Convert.ToString(msg.ID.ToString("X")); // decimale çeviriyor 
+            string msgID = Convert.ToString(msg.ID.ToString("X")); // convert to decimal 
             Debug.WriteLine(Convert.ToString(msg.ID.ToString("X")).PadLeft(8, '0'));
             Debug.WriteLine(BitConverter.ToString(msg.DATA));
 
@@ -129,7 +129,7 @@ namespace Serial_Control
 
                 int mask = 0b_00000001;
 
-                /// MASKLAMA İŞLEMİ SONUCU INP0 INP1 INP2   OKUNUR
+                /// read INP1,INP2,INP3 WITH MASK 
                 while (x < 2)
                 {
 
@@ -181,10 +181,10 @@ namespace Serial_Control
             //// OUTA
             for (int i = 1; i < 4; i++)
             {
-                if (((RadioButton)groupBox1.Controls["radioBtnOUTA" + (i)]).Checked == true) // OUTAİ seçilmiş
+                if (((RadioButton)groupBox1.Controls["radioBtnOUTA" + (i)]).Checked == true) // SELECT OUTA"i"
                 {
 
-                    if (((RadioButton)panel1.Controls["radioButtonpwmA" + (i)]).Checked == false)  // pwm seçilmemiş
+                    if (((RadioButton)panel1.Controls["radioButtonpwmA" + (i)]).Checked == false)  // Not Select PWM
                     {
 
                         if (((RadioButton)panel1.Controls["radioBtnOUTA" + (i) + (1)]).Checked == true) // High 
@@ -220,8 +220,8 @@ namespace Serial_Control
                         }
                     }
 
-                    else if (((RadioButton)panel1.Controls["radioButtonpwmA" + (i)]).Checked == true) // pwm seçilmiş
-                    {
+                    else if (((RadioButton)panel1.Controls["radioButtonpwmA" + (i)]).Checked == true) // Selected Pwm
+                    { 
                         if (((TextBox)panel1.Controls["textBoxPwmOutA" + (i)]).Text == "")
                         {
                             MessageBox.Show("PWM VALUE NOT ENTERED! OutA" + i.ToString() + " PWM", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -267,7 +267,7 @@ namespace Serial_Control
                 }
 
                 msgid = "11111111";
-                //Pcan.SendFrame CanID Message Length ve gönderilecek veri dizisine ihtiyaç duyar.
+                //Pcan.SendFrame CanID Message , Length ve data array to send  
                 pcan.SendFrameExt(Convert.ToInt32(msgid, 16), 8, new byte[] { Convert.ToByte(Convert.ToInt32(c0, 16)), Convert.ToByte(Convert.ToInt32(f1, 16)), Convert.ToByte(portnumber), Convert.ToByte(portstatus) });//veriler (16) hex olarak yollanıyor
                 Debug.WriteLine("ID:11111111");
                 Debug.WriteLine("MSG: " + BitConverter.ToString(new byte[] { Convert.ToByte(Convert.ToInt32(c0, 16)), Convert.ToByte(Convert.ToInt32(f1, 16)), Convert.ToByte(portnumber), Convert.ToByte(portstatus) }));
@@ -307,6 +307,11 @@ namespace Serial_Control
         }
 
         private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioBtnOUTA11_CheckedChanged(object sender, EventArgs e)
         {
 
         }
